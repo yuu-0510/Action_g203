@@ -10,12 +10,11 @@ public:
 	~CPlayer();
 
 private:
-	bool bJumpFlg;		//ジャンプフラグ
-	//???				//当たり判定a
-	CWire* m_Wire;		//ワイヤークラス
-	float fPosX;
-	float fPosY;
-
+	bool bJumpFlg;							//ジャンプフラグ
+	float fHalfSizeX;						//当たり判定
+	float fHalfSizeY;						//当たり判定
+	CWire* m_Wire;							//ワイヤークラス
+	
 private:
 	void CheckCollision(/*座標、当たり判定*/);			//当たり判定関数
 	void Move();										//移動関数
