@@ -11,7 +11,7 @@ public:
 
 private:
 	bool bJumpFlg;		//ジャンプフラグ
-	//???				//当たり判定
+	//???				//当たり判定a
 	CWire* m_Wire;		//ワイヤークラス
 	
 private:
