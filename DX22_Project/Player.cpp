@@ -1,5 +1,5 @@
 #include "Player.h"
-
+//‚±‚ñ‚É‚¿‚í
 CPlayer::CPlayer():
 	bJumpFlg(false),
 	m_Wire(nullptr)
