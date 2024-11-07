@@ -1,7 +1,7 @@
 #pragma once
 #include "Character.h"
 #include "Wire.h"
-#define GRAVITI ()
+#define GRAVITI (9.80665) //重力加速度
 
 class CPlayer : public CCharacter
 {
@@ -10,9 +10,10 @@ public:
 	~CPlayer();
 
 private:
-	bool bJumpFlg;		//ジャンプフラグ
-	//???				//当たり判定a
-	CWire* m_Wire;		//ワイヤークラス
+	bool bJumpFlg;							//ジャンプフラグ
+	float fHalfSizeX;						//当たり判定
+	float fHalfSizeY;						//当たり判定
+	CWire* m_Wire;							//ワイヤークラス
 	
 private:
 	void CheckCollision(/*座標、当たり判定*/);			//当たり判定関数
